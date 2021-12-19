@@ -1,0 +1,97 @@
+.pets {
+  background: #1f1c1d;
+
+  &__container {
+    margin: 0 auto;
+    width: 1044px;
+    padding: 0 10px;
+
+    @media (max-width: $large-width) {
+      width: 1024px;
+    }
+  }
+
+  &__caption {
+    margin: 0 auto 49px;
+    padding-top: 225px;
+    width: 516px;
+    text-align: center;
+
+    @media (max-width: $desktop-width) {
+      padding-top: 100px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 23px;
+  }
+
+  &__desc {
+    margin-bottom: 38px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+
+  &-nav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    @media (max-width: $desktop-width) {
+
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item {
+      padding-right: 43px;
+
+      &:nth-of-type(3) {
+        padding-right: 0;
+      }
+
+      @media (max-width: $desktop-width) {
+
+      }
+      @media (max-width: $tablet-width) {
+
+      }
+    }
+
+    &__link {
+      color: rgba(255, 255, 255, 0.2);
+      transition: all 0.5s ease;
+
+      &_current {
+        color: $text-color;
+      }
+
+      &:hover,
+      &:focus {
+        color: $orange-color;
+      }
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    margin-bottom: 55px;
+  }
+
+  &__picture {
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 18px 40px;
+    margin-bottom: 84px;
+  }
+}

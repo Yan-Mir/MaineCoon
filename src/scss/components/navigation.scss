@@ -1,0 +1,44 @@
+.nav {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding-right: 52px;
+
+    &:nth-of-type(3) {
+      padding-right: 0;
+    }
+
+    @media (max-width: $desktop-width) {
+      padding-right: 34px;
+    }
+    @media (max-width: $tablet-width) {
+      padding-right: 38px;
+    }
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+
+    &_current {
+      color: $text-color;
+    }
+
+    &:hover,
+    &:focus {
+      color: $orange-color;
+    }
+  }
+}

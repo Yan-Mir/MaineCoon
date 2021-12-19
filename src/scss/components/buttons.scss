@@ -1,0 +1,16 @@
+.button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color;
+  background: transparent;
+  border: 0.5px solid #A07B50;
+  transition: all 0.7s ease;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background: rgba(160, 123, 80, 0.5);
+  }
+}

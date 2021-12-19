@@ -1,0 +1,139 @@
+.feedback {
+  background: #1f1c1d;
+
+  &__container {
+    position: relative;
+    padding-bottom: 92px;
+  }
+
+  &__caption {
+    margin: 0 auto;
+    padding-top: 74px;
+    width: 428px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 23px;
+  }
+
+  &__desc {
+    margin-bottom: 54px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+
+  &__column {
+    margin: 0 218px 0 355px;
+    width: 793px;
+  }
+
+  &__item {
+    position: relative;
+    margin-top: 37px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(1)::before {
+      position: absolute;
+      top: 10px;
+      left: -110px;
+      content: "01";
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 82px;
+      color: $orange-color;
+    }
+    &:nth-of-type(2)::before {
+      position: absolute;
+      top: 10px;
+      left: -110px;
+      content: "02";
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 82px;
+      color: $orange-color;
+    }
+    &:nth-of-type(3)::before {
+      position: absolute;
+      top: 10px;
+      left: -110px;
+      content: "03";
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 82px;
+      color: $orange-color;
+    }
+    &:nth-of-type(4)::before {
+      position: absolute;
+      top: 10px;
+      left: -110px;
+      content: "04";
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 82px;
+      color: $orange-color;
+    }
+  }
+
+  &__button {
+    position: relative;
+    padding: 0;
+    width: 793px;
+    height: 110px;
+    background: transparent;
+    border: 0.5px solid $orange-color;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 104px;
+      height: 109px;
+      content: "";
+      background-color: transparent;
+      border-left: 0.5px solid $orange-color;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+
+    &:hover::after,
+    &:hover::after {
+      background-color:$orange-color;
+    }
+  }
+
+  &__question {
+    margin-left: 42px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ddd0c3;
+    text-align: start;
+  }
+
+  &__answer {
+    padding: 40px 0 40px 42px;
+    font-size: 16px;
+    line-height: 24px;
+    border: 0.5px solid $orange-color;
+    border-top: none;
+
+    & > p:first-child {
+      margin-bottom: 34px;
+    }
+  }
+
+  &__lust-btn {
+    padding: 17px 50px;
+    position: absolute;
+    bottom: 0;
+    right: 211px;
+  }
+}
+

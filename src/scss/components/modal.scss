@@ -1,0 +1,135 @@
+.modal {
+
+  &__container {
+    width: 680px;
+    height: 368px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: "Yeseva One";
+    font-style: normal;
+    margin: 0 0 35px 40px;
+    padding-top: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #674C33;
+  }
+
+  &__button-close {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__desc {
+    margin: 0 0 40px 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #674C33;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 40px 32px;
+      width: 600px;
+    }
+  }
+
+  &__button {
+    padding: 0;
+    width: 280px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $text-color;
+    background: #A07B50;
+    border: none;
+  }
+}
+
+.user {
+
+  &__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: #674C33;
+  }
+
+  &-consent, &-consent > a {
+    display: block;
+    width: 270px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B29375;
+  }
+
+  &-consent > a {
+    text-decoration: underline;
+  }
+
+  &__field {
+    padding-left: 24px;
+    width: 280px;
+    height: 56px;
+    border: 1px solid rgba(103, 76, 51, 0.1);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #674C33;
+      opacity: 0.4;
+    }
+  }
+}
+
+.phone {
+
+  &__namber {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: #674C33;
+  }
+
+  &__field {
+    padding-left: 24px;
+    width: 280px;
+    height: 56px;
+    border: 1px solid rgba(103, 76, 51, 0.1);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #674C33;
+      opacity: 0.4;
+    }
+  }
+}

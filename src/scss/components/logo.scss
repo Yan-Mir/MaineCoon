@@ -1,0 +1,11 @@
+.logo {
+
+  &__img {
+    transition: all 0.5s ease;
+  }
+
+  &__img:hover,
+  &__img:focus {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,112 @@
+.team {
+
+  &__container {
+    min-height: 694px;
+  }
+
+  &__caption {
+    margin: 0 auto;
+    padding-top: 84px;
+    width: 510px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 23px;
+  }
+
+  &__desc {
+    margin-bottom: 26px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    width: 1186px;
+  }
+
+  &-slider-01,
+  &-slider-02,
+  &-slider-03 {
+    position: absolute;
+    top: 0;
+    right: 66px;
+    width: 660px;
+  }
+
+  &-slider-02,
+  &-slider-03 {
+    display: none;
+  }
+}
+
+.worker-card {
+  width: 660px;
+  min-height: 402px;
+  background-color: #1f1c1d;
+  border-top: 23px solid #151313;
+  border-bottom: 23px solid #151313;
+  border-right: 34px solid #151313;
+  border-left: 26px solid #151313;
+  outline: 0.5px solid rgba(160, 123, 80, 0.43);
+
+  &__name {
+    margin-bottom: 10px;
+    padding: 70px 0 0 98px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: $orange-color;
+  }
+
+  &__post {
+    margin: 0 0 28px 98px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $orange-color;
+  }
+
+  &__desc {
+    margin: 0 0 51px 98px;
+    width: 400px;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.72);
+  }
+}
+
+.worker-socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 72px 98px;
+  width: 67px;
+
+  &__link {
+    color: $text-color;
+    transition: all 0.5s ease;
+
+    &:hover,
+    &:focus {
+      color: $orange-color;
+    }
+  }
+
+  &__icon--fb {
+    font-size: 16px;
+  }
+
+  &__icon--tw {
+    font-size: 17px;
+  }
+
+  &__icon--vk {
+    font-size: 18px;
+  }
+}

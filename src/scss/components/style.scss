@@ -1,0 +1,54 @@
+body {
+  max-width: 1366px;
+  margin: auto;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, h1, h2, h3, figure {
+  margin: 0;
+}
+
+.desc-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  color: $subtitle-color;
+}
+
+.title-text {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color;
+  background: transparent;
+  border: 0.5px solid #A07B50;
+  transition: all 0.7s ease;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background: rgba(160, 123, 80, 0.5);
+  }
+}

@@ -1,0 +1,72 @@
+.footer {
+  background: #151313;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 274px 0 245px;
+    width: 848px;
+    min-height: 156px;
+  }
+
+  &__logo {
+    width: 47px;
+    height: 21px;
+  }
+
+  &__location {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: rgba(253, 242, 230, 0.83);
+    transition: all 0.5s ease;
+
+    &:hover,
+    &:focus {
+      color: $orange-color;
+    }
+  }
+
+  &__tel {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 27px;
+    color: #fdf2e6;
+    transition: all 0.5s ease;
+
+    &:hover,
+    &:focus {
+      color: $orange-color;
+    }
+  }
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 67px;
+
+  &__link {
+    color: $orange-color;
+    transition: all 0.5s ease;
+
+    &:hover,
+    &:focus {
+      color: $text-color;
+    }
+  }
+
+  &__icon--fb {
+    font-size: 16px;
+  }
+
+  &__icon--tw {
+    font-size: 17px;
+  }
+
+  &__icon--vk {
+    font-size: 18px;
+  }
+}
